@@ -1,0 +1,142 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8ohhlwhtvigi"]
+
+[ext_resource type="Texture2D" uid="uid://cxsl7c0u33gim" path="res://assets/sprites/png-clipart-brown-matchstick-match-com-match-stick-wood-matchbox-removebg-preview.png" id="1_585ib"]
+[ext_resource type="Script" path="res://scripts/MatchNumber.gd" id="1_e6hgi"]
+[ext_resource type="Texture2D" uid="uid://8re34ubhxa3q" path="res://assets/sprites/png-clipart-brown-matchstick-match-com-match-stick-wood-matchbox-removebg-preview2-removebg-preview.png" id="2_j22ae"]
+
+[node name="MatchNumber" type="Control"]
+layout_mode = 3
+anchor_right = 0.347
+anchor_bottom = 1.0
+offset_right = 0.255981
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e6hgi")
+
+[node name="TexturesContainer" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="00" type="TextureRect" parent="TexturesContainer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.253
+anchor_top = 0.179
+anchor_right = 0.253
+anchor_bottom = 0.487
+offset_left = -99.884
+offset_top = 0.160019
+offset_right = 99.7
+offset_bottom = 0.160004
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_585ib")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="01" type="TextureRect" parent="TexturesContainer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.252
+anchor_top = 0.478
+anchor_right = 0.252
+anchor_bottom = 0.795
+offset_left = -102.8
+offset_top = 0.160004
+offset_right = 102.616
+offset_bottom = 0.159973
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_585ib")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="10" type="TextureRect" parent="TexturesContainer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.255
+anchor_top = 0.205
+anchor_right = 0.79
+anchor_bottom = 0.205
+offset_left = -0.0920181
+offset_top = -106.84
+offset_right = -0.09198
+offset_bottom = 107.16
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_j22ae")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="11" type="TextureRect" parent="TexturesContainer"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.255
+anchor_top = 0.483
+anchor_right = 0.79
+anchor_bottom = 0.483
+offset_left = -0.0920181
+offset_top = -106.84
+offset_right = -0.09198
+offset_bottom = 107.16
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_j22ae")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="12" type="TextureRect" parent="TexturesContainer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.255
+anchor_top = 0.772
+anchor_right = 0.79
+anchor_bottom = 0.772
+offset_left = -0.0920181
+offset_top = -106.84
+offset_right = -0.09198
+offset_bottom = 107.16
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_j22ae")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="20" type="TextureRect" parent="TexturesContainer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.783
+anchor_top = 0.179
+anchor_right = 0.783
+anchor_bottom = 0.487
+offset_left = -99.884
+offset_top = 0.160019
+offset_right = 100.1
+offset_bottom = 0.160004
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_585ib")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="21" type="TextureRect" parent="TexturesContainer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.782
+anchor_top = 0.484
+anchor_right = 0.782
+anchor_bottom = 0.785
+offset_left = -99.8
+offset_top = 0.367981
+offset_right = 100.2
+offset_bottom = 0.319977
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_585ib")
+expand_mode = 2
+stretch_mode = 5
