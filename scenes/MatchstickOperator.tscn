@@ -1,0 +1,132 @@
+[gd_scene load_steps=4 format=3 uid="uid://crpgmc3n0jxp6"]
+
+[ext_resource type="Script" path="res://scripts/MatchOperator.gd" id="1_q2pt6"]
+[ext_resource type="Texture2D" uid="uid://cxsl7c0u33gim" path="res://assets/sprites/png-clipart-brown-matchstick-match-com-match-stick-wood-matchbox-removebg-preview.png" id="1_xd3m7"]
+[ext_resource type="Texture2D" uid="uid://8re34ubhxa3q" path="res://assets/sprites/png-clipart-brown-matchstick-match-com-match-stick-wood-matchbox-removebg-preview2-removebg-preview.png" id="2_85ssx"]
+
+[node name="MatchstickOperator" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q2pt6")
+
+[node name="TexturesContainer" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="01" type="TextureRect" parent="TexturesContainer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.3
+anchor_right = 0.5
+anchor_bottom = 0.7
+offset_left = -129.692
+offset_top = 0.160004
+offset_right = 129.508
+offset_bottom = 0.159943
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_85ssx")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="03" type="TextureRect" parent="TexturesContainer"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.3
+anchor_right = 0.5
+anchor_bottom = 0.7
+offset_left = -129.692
+offset_top = 0.159988
+offset_right = 129.508
+offset_bottom = 0.159943
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.785398
+pivot_offset = Vector2(129.6, 129.6)
+texture = ExtResource("2_85ssx")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="00" type="TextureRect" parent="TexturesContainer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.3
+anchor_right = 0.5
+anchor_bottom = 0.7
+offset_left = -99.884
+offset_top = 0.160019
+offset_right = 99.7
+offset_bottom = 0.160004
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_xd3m7")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="02" type="TextureRect" parent="TexturesContainer"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.3
+anchor_right = 0.5
+anchor_bottom = 0.7
+offset_left = -129.692
+offset_top = 0.159988
+offset_right = 129.508
+offset_bottom = 0.160004
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.785398
+pivot_offset = Vector2(129.6, 129.6)
+texture = ExtResource("1_xd3m7")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="04" type="TextureRect" parent="TexturesContainer"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.275
+anchor_right = 0.5
+anchor_bottom = 0.675
+offset_left = -129.692
+offset_top = 0.160004
+offset_right = 129.508
+offset_bottom = 0.159943
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_85ssx")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="05" type="TextureRect" parent="TexturesContainer"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.325
+anchor_right = 0.5
+anchor_bottom = 0.725
+offset_left = -129.692
+offset_top = 0.160004
+offset_right = 129.508
+offset_bottom = 0.160004
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_85ssx")
+expand_mode = 2
+stretch_mode = 5
