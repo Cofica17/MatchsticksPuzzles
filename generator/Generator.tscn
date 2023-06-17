@@ -27,7 +27,7 @@ theme_override_constants/separation = 84
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-number = 6
+number = 7
 
 [node name="MatchstickOperator" parent="VBoxContainer" instance=ExtResource("3_fc5li")]
 layout_mode = 2
@@ -36,7 +36,7 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-number = 4
+number = 7
 
 [node name="MatchstickOperator2" parent="VBoxContainer" instance=ExtResource("3_fc5li")]
 layout_mode = 2
@@ -46,7 +46,7 @@ operator = 4
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-number = 4
+number = 9
 
 [node name="SolveBtn" type="Button" parent="."]
 layout_mode = 0

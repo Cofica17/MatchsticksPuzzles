@@ -22,10 +22,21 @@ func update_number_data():
 func get_number_from_data():
 	var numbers_data = get_numbers_data()
 	var counter = 0
-	for number_data in numbers_data:
-		if number_data == data:
+	for number_data in numbers_data: 
+		if arrays_equal(number_data, data):
 			return counter
 		counter += 1
+
+func arrays_equal(arr1, arr2):
+	for i in arr1.size():
+		if arr1[i] is Array and arr2[i] is Array:
+			if not arrays_equal(arr1[i], arr2[i]):
+				return false
+		else:
+			if arr1[i] != arr2[i]:
+				return false
+	
+	return true
 
 func adjust_textures():
 	var counter = 0
