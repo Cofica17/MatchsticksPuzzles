@@ -21,7 +21,7 @@ func _ready():
 func set_operator(v):
 	operator = v
 	data = get_operator_data()[operator]
-	adjust_textures()
+	update_textures()
 	operator_str = get_operator_str()
 
 func get_operator_str(op = operator):
@@ -56,7 +56,7 @@ func arrays_equal(arr1, arr2):
 	
 	return true
 
-func adjust_textures():
+func update_textures():
 	var counter = 0
 	
 	for c in $TexturesContainer.get_children():

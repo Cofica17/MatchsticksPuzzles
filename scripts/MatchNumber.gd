@@ -14,7 +14,7 @@ func _ready():
 func set_number(num):
 	number = num
 	update_number_data()
-	adjust_textures()
+	update_textures()
 
 func update_number_data():
 	data = get_numbers_data()[number]
@@ -38,7 +38,7 @@ func arrays_equal(arr1, arr2):
 	
 	return true
 
-func adjust_textures():
+func update_textures():
 	var counter = 0
 	
 	for i in data:
