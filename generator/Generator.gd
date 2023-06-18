@@ -15,21 +15,40 @@ func solve_algorithm():
 				for bit in column_data:
 					if bit == 1:
 						c.data[counter_column_data][counter_bit] = 0
-						for c2 in container.get_children():
-							if c2 is MatchNumber:
-								var counter_column_data2 = 0
-								for column_data2 in c2.data:
-									var counter_bit2 = 0
-									for bit2 in column_data2:
-										if bit2 == 0:
-											c2.data[counter_column_data2][counter_bit2] = 1
-											solve_eq()
-											c2.data[counter_column_data2][counter_bit2] = 0
-										counter_bit2 += 1
-									counter_column_data2 += 1
+						try_putting_one_match()
 						c.data[counter_column_data][counter_bit] = 1
 					counter_bit += 1
 				counter_column_data += 1
+		elif c is MatchOperator:
+			var counter_bit = 0
+			for bit in c.data:
+				if bit == 1:
+					c.data[counter_bit] = 0
+					try_putting_one_match()
+					c.data[counter_bit] = 1
+				counter_bit += 1
+
+func try_putting_one_match():
+	for c2 in container.get_children():
+		if c2 is MatchNumber:
+			var counter_column_data2 = 0
+			for column_data2 in c2.data:
+				var counter_bit2 = 0
+				for bit2 in column_data2:
+					if bit2 == 0:
+						c2.data[counter_column_data2][counter_bit2] = 1
+						solve_eq()
+						c2.data[counter_column_data2][counter_bit2] = 0
+					counter_bit2 += 1
+				counter_column_data2 += 1
+		elif c2 is MatchOperator:
+			var counter_bit2 = 0
+			for bit2 in c2.data:
+				if bit2 == 0:
+					c2.data[counter_bit2] = 1
+					solve_eq()
+					c2.data[counter_bit2] = 0
+				counter_bit2 += 1
 
 func solve_eq():
 	var eq = ""
@@ -54,6 +73,7 @@ func solve_eq():
 	
 	if ex.parse(eq) == OK:
 		var result = ex.execute()
-		if result == container.get_child(container.get_child_count()-1).get_number_from_data():
+		var ex_result = container.get_child(container.get_child_count()-1).get_number_from_data()
+		if result == ex_result:
 			print("found the solution")
-			print(eq)
+			print(eq+"="+str(ex_result))

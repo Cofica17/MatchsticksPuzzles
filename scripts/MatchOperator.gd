@@ -41,9 +41,20 @@ func get_operator_from_data():
 	var operator_data = get_operator_data()
 	var counter = 0
 	for op_data in operator_data:
-		if op_data == data:
+		if arrays_equal(op_data, data):
 			return get_operator_str(counter)
 		counter += 1
+
+func arrays_equal(arr1, arr2):
+	for i in arr1.size():
+		if arr1[i] is Array and arr2[i] is Array:
+			if not arrays_equal(arr1[i], arr2[i]):
+				return false
+		else:
+			if arr1[i] != arr2[i]:
+				return false
+	
+	return true
 
 func adjust_textures():
 	var counter = 0
